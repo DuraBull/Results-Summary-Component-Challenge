@@ -1,0 +1,67 @@
+.summary
+    display: flex
+    position: relative
+    left: -30px
+    border-top-right-radius: 30px
+    border-bottom-right-radius: 30px
+    box-shadow: -.1px -.5px 0px black inset
+    padding-left: 3.5em
+    .heading
+        align-self: start
+        padding-bottom: 1.5em
+    .btn
+            margin: auto 0
+    
+
+.chart
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 1em
+
+.chart-item
+    p
+        margin: .8em
+    &:last-of-type
+        margin-bottom: 2em
+
+
+.reaction, .memory, .verbal, .visual
+    border-radius: 10px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+    .left
+        display: flex
+        align-items: center
+        margin-left: .6em
+        .icon
+            height: 100%
+
+    .score
+        font-weight: $font-bold
+        color: black
+        display: flex
+        align-items: center
+    .hundred
+        color: gray
+        
+
+.reaction
+    color: $light-red
+    background: $light-red-bg
+
+.memory
+    color: $orangey-yellow
+    background: $orangey-yellow-bg
+
+.verbal
+    color: $green-teal
+    background: $green-teal-bg
+
+.visual
+    color: $cobalt-blue
+    background: $cobalt-blue-bg

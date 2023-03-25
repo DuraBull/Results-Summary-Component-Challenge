@@ -1,15 +1,30 @@
 .result
-    display: flex
-    justify-content: center
+    position: relative
+    z-index: 1
+    color: $light-lavender
     background: linear-gradient($light-slate-blue, $light-royal-blue)
     border-radius: 30px
+    p
+        margin: 0
+        width: 85%
+    .compliment
+        color: $white
+        font-size: 1.8em
+        margin: .4em 0
 
 .out-of-100
     display: flex
     flex-direction: column
     justify-content: center
-    margin: auto
+    align-items: center
     background: linear-gradient($violet-blue, $persian-blue)
     border-radius: 100%
     width: 200px
-    height: 200px
+    aspect-ratio: 1/1
+    margin: 2em 0 1em 0
+    h1
+        color: $white
+        font-size: 4em
+        margin: 0
+    p
+        font-weight: $font-bold
