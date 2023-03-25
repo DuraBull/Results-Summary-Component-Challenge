@@ -196,7 +196,6 @@ body {
 
 .content-wrapper {
   display: flex;
-  width: 100%;
 }
 
 .col {
@@ -294,9 +293,6 @@ body {
   align-items: center;
   margin-left: 0.6em;
 }
-.reaction .left .icon, .memory .left .icon, .verbal .left .icon, .visual .left .icon {
-  height: 100%;
-}
 .reaction .score, .memory .score, .verbal .score, .visual .score {
   font-weight: 700;
   color: black;
@@ -327,6 +323,53 @@ body {
   background: hsla(234, 85%, 45%, 0.05);
 }
 
+@media screen and (max-width: 50em) {
+  body {
+    height: 100%;
+  }
+  .content-wrapper {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .col {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .result {
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .result .out-of-100 {
+    margin-top: 1em;
+  }
+  .summary {
+    border: 0;
+    box-shadow: 0 0 0 0;
+    left: 0;
+  }
+  .summary .heading {
+    padding: 1em;
+  }
+  .summary .btn {
+    margin: auto 1em;
+  }
+  .reaction, .memory, .verbal, .visual {
+    margin: auto;
+  }
+  .chart-item {
+    margin: 0 1em;
+  }
+  .chart-item:last-of-type {
+    margin-bottom: 0;
+  }
+}
 .btn {
   text-decoration: none;
   color: white;
